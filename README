@@ -1,0 +1,27 @@
+Temaku (short for TErminal MarKUp) is a small (single header & source file)
+library that I use for a lot of my internal projects and scripts to easily
+pretty print help/usage/version information on the terminal by typing simple
+markdown formatted text without actually having to implement or import a
+complicated parser for something like ROFF or Markdown.
+
+See `example.c` for a quick example of how you might use temaku.
+
+Temaku has the following markup features:
+
+```
+=HEADER
+*bold*
+/italic/
+_underlined_
+|alternative color| (usually dim)
+%B bold %b
+%I italic %i
+%U underline %u
+%A alternative color %a
+%S strikethrough %s
+%R reverse video %r
+%F{red} foreground color %f
+%K{blue} background color %k
+%E Clear background until end of line (Useful for setting background color)
+%L{www.example.com} hyperlinks %l
+```
