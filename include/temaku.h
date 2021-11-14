@@ -88,7 +88,7 @@ enum temaku_sequence {
     TEMAKU_STRIKETHROUGH_END,   // %s
     TEMAKU_REVERSE_VIDEO_START, // %R
     TEMAKU_REVERSE_VIDEO_END,   // %r
-    TEMAKU_ALTERNATIVE_START,   // %A, /(?<={{wordchar}})\|(?!{{wordchar}})/
+    TEMAKU_ALTERNATIVE_START,   // %A, /(?<!{{wordchar}})\|(?!{{wordchar}})/
     TEMAKU_ALTERNATIVE_END,     // %a, /(?<={{wordchar}})\|(?!{{wordchar}})/
     TEMAKU_FGCOLOR_START,       // %F{red}
     TEMAKU_FGCOLOR_END,         // %f
